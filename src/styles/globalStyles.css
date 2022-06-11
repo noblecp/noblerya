@@ -1,0 +1,132 @@
+.global_container {
+}
+
+.global_margin {
+  margin: 3rem 0;
+}
+.global_padding {
+  padding: 3rem 0 3rem 0;
+}
+
+.global_padding-top {
+  padding: 3rem 0 0 0;
+}
+.global_padding-bottom {
+  padding: 0 0 3rem 0;
+}
+.global_padding-small {
+  padding: 2rem 0;
+}
+
+.global_section-title {
+  opacity: 0.6;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0rem 0 1rem 0;
+}
+
+.global_title {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.global_subtitle {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.global_paragraph-text {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.global_small-paragraph-text {
+  font-size: 0.9rem;
+}
+
+Link,
+a {
+  text-decoration: none;
+}
+
+/* @media only screen and (max-width: 910px) {
+  .global_title {
+    font-size: 3.9rem;
+  }
+  .global_subtitle {
+    font-size: 1.4rem;
+  }
+} */
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .global_title {
+    font-size: 3.8rem;
+  }
+  .global_subtitle {
+    font-size: 1.5rem;
+  }
+  .global_paragraph-text {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .global_small-paragraph-text {
+    font-size: 0.8rem;
+  }
+  .global_margin {
+    margin: 2rem 0;
+  }
+  .global_padding {
+    padding: 2rem 0 2rem 0;
+  }
+  .global_padding-top {
+    padding: 2rem 0 0 0;
+  }
+  .global_padding-bottom {
+    padding: 0 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .global_title {
+    font-size: 2.5rem;
+  }
+  .global_subtitle {
+    font-size: 1.2rem;
+  }
+  .global_paragraph-text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  /* .global_padding {
+    padding: 1rem 0 1rem 0;
+  } */
+  .global_section-title {
+    margin: 0rem 0 1rem 0;
+  }
+}
+
+/* @media only screen and (max-width: 500px) {
+  .global_title {
+    font-size: 2.5rem;
+  }
+} */
+
+.global_top-extra-padding-top {
+  padding-top: 5rem;
+}
+.global_top-extra-padding-bottom {
+  padding-bottom: 5rem;
+}
+
+.global_not-draggable {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
