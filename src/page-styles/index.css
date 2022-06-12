@@ -4,12 +4,14 @@
   --accent: #cebebe;
   --soft-contrast: #f4f3f3;
   --bold: #3bceac; */
-
-  --primary: #3a0ca3;
-  --secondary: #f72585;
-  --accent1: #7209b7;
-  --accent2: #4361ee;
+  --white: #ffffff;
+  --primary: #022b3a;
+  --secondary: #1f7a8c;
+  --accent1: #bfdbf7;
+  --accent2: #e1e5f2;
   --accent3: #4cc9f0;
+
+  --variableAmt: 1152px;
 }
 
 .dark {

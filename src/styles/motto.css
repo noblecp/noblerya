@@ -1,0 +1,54 @@
+.motto_container {
+  /* padding: 2rem 3rem 2rem; */
+  background: var(--primary);
+  color: white;
+  overflow: hidden;
+  /* clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0); */
+}
+
+.motto_content {
+  padding: 2rem 0;
+}
+
+.quoteMarks {
+  z-index: -1;
+  width: 11rem;
+}
+
+.mottoTitle {
+  font-weight: bold;
+  position: relative;
+  margin-bottom: -60px;
+  top: -80px;
+  left: 30px;
+}
+
+.mottoText {
+  padding-top: 1.5rem;
+}
+
+.motto_content-container {
+  margin: 0 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .motto_content-container {
+    margin: 0 1rem;
+  }
+  .quoteMarks {
+    width: 8rem;
+  }
+  .mottoTitle {
+    margin-bottom: -30px;
+    top: -50px;
+    left: 20px;
+  }
+}
+
+@media only screen and (min-width: var(--variableAmt)) {
+  .motto_content-container {
+    max-width: (--variableAmt);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

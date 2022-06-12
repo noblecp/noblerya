@@ -130,3 +130,21 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.global_variable-width {
+  margin: 0 3rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .global_variable-width {
+    max-width: var(--variableAmt);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .global_variable-width {
+    margin: 0 1rem;
+  }
+}

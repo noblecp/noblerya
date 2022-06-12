@@ -25,17 +25,73 @@ export const QUERY = graphql`
         journey {
           html
         }
+        hero {
+          fileName
+          url
+        }
+        storyStatistics {
+          ... on GRAPHCMS_StoryStatistic {
+            number
+            caption
+          }
+        }
+      }
+      differences {
+        sectionHeader
+        subtitle
+        differenceItems {
+          ... on GRAPHCMS_DifferenceItem {
+            picture {
+              url
+            }
+            title
+            caption
+          }
+        }
+      }
+      timelines {
+        sectionHeader
+        timelineItems {
+          ... on GRAPHCMS_TimelineItem {
+            timestamp
+            title
+            filled
+            description {
+              html
+            }
+          }
+        }
+      }
+      mottos {
+        sectionHeader
+        motto
+        description {
+          html
+        }
+      }
+      contacts {
+        sectionHeader
+        title
+        subtitle
+        namePlaceholder
+        emailPlaceholder
+        messagePlaceholder
+      }
+      links {
+        allLinks {
+          ... on GRAPHCMS_LinkItem {
+            title
+            url
+            icon {
+              url
+            }
+          }
+        }
       }
     }
   }
 `
 const Home = ({ data }) => {
-  console.log(data)
-
-  // useEffect(() => {}, [])
-  // const GRAPHCMS_CONTENT_API_KEY =
-  //   "https://api-us-east-1.graphcms.com/v2/cl4997ixd0za101wdd5on454b/master"
-
   return (
     <>
       <Helmet
